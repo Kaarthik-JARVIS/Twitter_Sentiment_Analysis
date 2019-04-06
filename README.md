@@ -123,3 +123,13 @@ The below piece of code in the same class is to classify the tweets whether it i
              else: 
                  return 'negative'
   
+To generate the piechart we use the following piece of code in main method
+
+         slices_tweets = [format(100*len(ptweets)/len(tweets)), format(100*len(ntweets)/len(tweets)), format((100*len(tweets)-         100*len(ntweets)-100*len(ptweets))/len(tweets))]
+         analysis = ['Positive', 'Negative', 'Neutral']
+         colors = ['g', 'r', 'y']
+
+         plt.pie(slices_tweets, labels=analysis, startangle=-40, autopct='%.1f%%')
+         plt.savefig(query)
+         plt.show()
+    
