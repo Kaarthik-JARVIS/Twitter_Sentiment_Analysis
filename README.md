@@ -214,4 +214,4 @@ Now, calling the main method
 
 The pie chart generated is as,
 
-![output](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![output](https://github.com/Kaarthik-JARVIS/Twitter_Sentiment_Analysis/blob/master/CSK.png)
