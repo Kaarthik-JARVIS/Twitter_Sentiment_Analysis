@@ -129,7 +129,45 @@ To generate the piechart we use the following piece of code in main method
          analysis = ['Positive', 'Negative', 'Neutral']
          colors = ['g', 'r', 'y']
 
+         plt.pie(slices_tweets, labels=analysis, startangle=-40, autopct='%.1f%%') #to generate the pie chart
+         plt.savefig(query) #to save the local copy of the piechart in your PC
+         plt.show() #to disply the generated chart
+    
+Now, let us define the main method as follows
+
+     def main(): 
+         # creating object of TwitterClient Class 
+         api = TwitterClient() 
+         # calling function to get tweets
+         query = input("What to search for? ")
+         tweets = api.get_tweets(query , count = 200) 
+         f = open('helloworld.txt','w')
+         # picking positive tweets from tweets 
+         ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive'] 
+         # percentage of positive tweets 
+         print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+         #f.write(format(100*len(ptweets)/len(tweets))) 
+         # picking negative tweets from tweets 
+         ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative'] 
+         # percentage of negative tweets 
+         print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets))) 
+         # percentage of neutral tweets 
+         print("Neutral tweets percentage: {} %".format((100*len(tweets)-100*len(ntweets)-100*len(ptweets))/len(tweets))) 
+
+         # printing first 5 positive tweets 
+         print("\n\nPositive tweets:") 
+         for tweet in ptweets[:10]: 
+             print(tweet['text']) 
+
+         # printing first 5 negative tweets 
+         print("\n\nNegative tweets:") 
+         for tweet in ntweets[:10]: 
+             print(tweet['text']) 
+         #f.close()
+         slices_tweets = [format(100*len(ptweets)/len(tweets)), format(100*len(ntweets)/len(tweets)), format((100*len(tweets)-100*len(ntweets)-100*len(ptweets))/len(tweets))]
+         analysis = ['Positive', 'Negative', 'Neutral']
+         colors = ['g', 'r', 'y']
+
          plt.pie(slices_tweets, labels=analysis, startangle=-40, autopct='%.1f%%')
          plt.savefig(query)
          plt.show()
-    
