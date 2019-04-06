@@ -1,12 +1,13 @@
 # Twitter_Sentiment_Analysis
 To analyze public tweets about a topic using python, tweepy, textblob and to generate a pie chart using matplotlib
 
-Step 1: Installation of Tweepy: tweepy is the python client for the official Twitter API, install it using following pip command:
+Step 1: Installation of 
+
+        Tweepy: tweepy is the python client for the official Twitter API, install it using following pip command:
      
         pip install tweepy
 
-        TextBlob: textblob is the python library for processing textual data.
-        Install it using following pip command:
+        TextBlob: textblob is the python library for processing textual data, install it using following pip command:
 
         pip install textblob
 
