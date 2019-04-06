@@ -1,4 +1,4 @@
-# Twitter Sentiment Analysis Tutorial using python, tweepy, textblob and matplotLib
+# Twitter Sentiment Analysis Tutorial
 To analyze public tweets about a topic using python, tweepy, textblob and to generate a pie chart using matplotlib
 
 # Step 1: Installation of the required packages
