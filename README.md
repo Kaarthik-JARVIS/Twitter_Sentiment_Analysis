@@ -215,3 +215,9 @@ Now, calling the main method
 The pie chart generated is as,
 
 ![output](https://github.com/Kaarthik-JARVIS/Twitter_Sentiment_Analysis/blob/master/CSK.png)
+
+# References
+
+[Geeks For Geeks](https://www.geeksforgeeks.org/twitter-sentiment-analysis-using-python/)
+[Python Pandemonium](https://medium.com/python-pandemonium/data-visualization-in-python-pie-charts-in-matplotlib-c71fb0fe5c56)
+
