@@ -41,4 +41,30 @@ Import the required packages as following
      from textblob import TextBlob 
      import matplotlib.pyplot as plt
 
+Create a constructor for the class which authenticates the twitter client
+
+     class TwitterClient(object): 
+         ''' 
+         Generic Twitter Class for sentiment analysis. 
+         '''
+         def __init__(self): 
+             ''' 
+             Class constructor or initialization method. 
+             '''
+             # keys and tokens from the Twitter Dev Console 
+             consumer_key = 'XXXXXXXXXXXXXXXXXXXXXXX'
+             consumer_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+             access_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+             access_token_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+             # attempt authentication 
+             try: 
+                 # create OAuthHandler object 
+                 self.auth = OAuthHandler(consumer_key, consumer_secret) 
+                 # set access token and secret 
+                 self.auth.set_access_token(access_token, access_token_secret) 
+                 # create tweepy API object to fetch tweets 
+                 self.api = tweepy.API(self.auth) 
+             except: 
+                 print("Error: Authentication Failed")
 
