@@ -214,3 +214,4 @@ Now, calling the main method
 
 The pie chart generated is as,
 
+![output](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
