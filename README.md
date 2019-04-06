@@ -171,3 +171,43 @@ Now, let us define the main method as follows
          plt.pie(slices_tweets, labels=analysis, startangle=-40, autopct='%.1f%%')
          plt.savefig(query)
          plt.show()
+
+Now, calling the main method
+
+     if __name__ == "__main__": 
+         # calling main function 
+         main() 
+
+# Step 4: Executing the project
+
+     C:\Users\kaart> python e:\senti_analysis_twitter.py
+     What to search for? CSK
+     Positive tweets percentage: 41.53846153846154 %
+     Negative tweets percentage: 3.076923076923077 %
+     Neutral tweets percentage: 55.38461538461539 %
+
+
+     Positive tweets:
+     RT @CSK_Offl: #CSK Wins the Match By 22 Runs..��💥💥
+
+     The SUPER KINGS Are Back..�😎
+
+     #WhistlePodu
+     RT @TrendsDhoni: Learning from the Best ! ❤️ https://t.co/32JdlqpY0M
+     RT @DHONIism: For CSK In 2019 IPL
+
+     Most Runs - Dhoni (156)*
+     High Score - Dhoni (75*)
+     Most 6s - Dhoni (6)*
+     Most 50s - Dhoni, Jhadav, Faf(1)…
+     blue  97-7
+     pona match la csk kuda
+     If you think he's yo…
+     RT @Swez_S: #SelectDugout @StarSportsIndia @scottbstyris "If CSK were playing their matches on this pitch, they wouldn't be ranked as high…
+
+
+     Negative tweets:
+     @arsh2302 Hydrabad is mostly slow through out the all #IPL.
+     Delhi is an issue..And the csk.. too.
+     RT @mostly_insane: Kitna b maar khaao hum nhi sudhrenge tell your cutie to captain strategically and win matches kiddos
+     You guys are not ev…
