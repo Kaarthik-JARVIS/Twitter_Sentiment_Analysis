@@ -21,8 +21,13 @@ Step 2: Authentication
 
 In order to fetch tweets through Twitter API, one needs to register an App through their twitter account. Follow these steps for the same:
 
-Open this [link](https://developer.twitter.com/en/apps) and click the button: ‘Create New App’
-Fill the application details. You can leave the callback url field empty.
-Once the app is created, you will be redirected to the app page.
-Open the ‘Keys and Access Tokens’ tab.
-Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
+1)Open this [link](https://developer.twitter.com/en/apps) and click the button: ‘Create New App’
+
+2)Fill the application details. You can leave the callback url field empty.
+
+3)Once the app is created, you will be redirected to the app page.
+
+4)Open the ‘Keys and Access Tokens’ tab.
+
+5)Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
+
