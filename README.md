@@ -31,3 +31,14 @@ Open the ‘Keys and Access Tokens’ tab.
 
 Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
 
+# Step 3: Implementation
+
+Import the required packages as following
+
+     import re 
+     import tweepy 
+     from tweepy import OAuthHandler 
+     from textblob import TextBlob 
+     import matplotlib.pyplot as plt
+
+
