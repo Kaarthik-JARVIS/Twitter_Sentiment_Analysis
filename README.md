@@ -211,3 +211,6 @@ Now, calling the main method
      Delhi is an issue..And the csk.. too.
      RT @mostly_insane: Kitna b maar khaao hum nhi sudhrenge tell your cutie to captain strategically and win matches kiddos
      You guys are not ev…
+
+The pie chart generated is as,
+
