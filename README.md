@@ -125,7 +125,7 @@ The below piece of code in the same class is to classify the tweets whether it i
   
 To generate the piechart we use the following piece of code in main method
 
-         slices_tweets = [format(100*len(ptweets)/len(tweets)), format(100*len(ntweets)/len(tweets)), format((100*len(tweets)-         100*len(ntweets)-100*len(ptweets))/len(tweets))]
+         slices_tweets = [format(100*len(ptweets)/len(tweets)), format(100*len(ntweets)/len(tweets)), format((100*len(tweets)-100*len(ntweets)-100*len(ptweets))/len(tweets))]
          analysis = ['Positive', 'Negative', 'Neutral']
          colors = ['g', 'r', 'y']
 
